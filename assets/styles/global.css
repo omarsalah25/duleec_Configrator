@@ -71,7 +71,7 @@ select > option {
 /*buttons*/
 button {
 	cursor: pointer;
-	background: #cc0000;
+	background: grey;
 	color: #fff;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -2px rgba(0, 0, 0, 0.2),
 		0 1px 2px 0 rgba(0, 0, 0, 0.12);
@@ -311,6 +311,15 @@ input[type="color"]::-webkit-color-swatch {
 	padding: 10px 12px;
 	border: 0 none;
 }
+
+.homeHref a{
+	text-decoration: none;
+}
+
+.homeHref a:visited { 
+	text-decoration: none; 
+	color: white; 
+   }
 @media only screen and (min-width: 980px) {
 	#actions {
 		bottom: 20px;

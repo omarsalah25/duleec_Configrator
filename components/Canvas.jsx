@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera, PerformanceMonitor } from '@react-three/drei'
-import { DefaultLoadingManager } from 'three'
+import { Color, DefaultLoadingManager } from 'three'
 import Environment from './Environment'
 import Loader from './Loader'
 import Vehicle from './Vehicle'
@@ -30,20 +30,21 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
     return (
         <div id='vehicle'>
             {!isLoaded && <Loader />}
-            <Canvas shadows>
+            <Canvas >
+                <ambientLight />
                 <PerformanceMonitor onDecline={() => setPerformanceDegraded(true)} />
                 <OrbitControls
                     makeDefault
-                    target={[0, 0.5, 0]}
-                    minDistance={2}
+                    target={[0, 0.56, 0]}
+                    minDistance={1}
                     maxDistance={500}
                     maxPolarAngle={Math.PI}
                     autoRotate={cameraAutoRotate}
                     autoRotateSpeed={5}
                     dampingFactor={0.025}
                 />
-                <PerspectiveCamera makeDefault fov={25} position={[1, 1.5, 1.5]}>
-                    <pointLight position={[4, 2, 4]} intensity={0.1} />
+                <PerspectiveCamera makeDefault fov={25} position={[3, 1.5, 1.5]}>
+                    <pointLight position={[4, 2.5, 4]} intensity={0.9} />
                 </PerspectiveCamera>
 
                 <Suspense fallback={null}>

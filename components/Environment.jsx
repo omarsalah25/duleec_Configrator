@@ -10,17 +10,18 @@ export default function SceneEnvironment({ performanceDegraded }) {
                 <meshBasicMaterial color={0xffffff} side={BackSide} toneMapped={false} />
             </mesh>
 
-            <ambientLight intensity={0.15} />
+            <ambientLight intensity={0.1} />
 
             <Environment files={['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']} path={'assets/images/envmap/'} />
 
-            <Ground />
+            {/* <Ground /> */}
 
             {!performanceDegraded && (
                 <AccumulativeShadows temporal scale={10}>
                     <RandomizedLight position={[5, 5, -10]} radius={8} />
                 </AccumulativeShadows>
             )}
+
         </>
     )
 }

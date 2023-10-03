@@ -61,8 +61,8 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
         const shareableUrl = `${window.location.origin}?config=${encodedConfig}`
         // Notify user with the link element and copy button.
         Swal.fire({
-            title: 'Share Your Vehicle',
-            text: 'Copy this link to save or share your vehicle configuration:',
+            title: 'Share Your Creation',
+            text: 'Copy this link to save or share your duleec configuration:',
             html: `<a href="${shareableUrl}">Shareable link</a>`,
             showCancelButton: true,
             confirmButtonText: 'Copy Link',
@@ -91,7 +91,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
     return (
         <div id='actions'>
-            <button onClick={saveVehicle}>Save</button>
+            {/* <button onClick={saveVehicle}>Save</button> */}
             <button onClick={shareVehicle}>Share</button>
             <button onClick={takeScreenshot}>Screenshot</button>
         </div>
