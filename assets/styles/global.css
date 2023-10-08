@@ -225,8 +225,9 @@ input[type="color"]::-webkit-color-swatch {
 
 /* editor */
 #editor {
+	padding-top: 10px;
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	bottom: 0;
 	width: 100%;
 	overflow-y: auto;
