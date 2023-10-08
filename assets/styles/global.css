@@ -55,17 +55,24 @@ select {
 /*checkboxes*/
 input[type="checkbox"] {
 	float: left;
-	margin: 2px 7px 0 0;
+	margin: 4px 6px 0 0;
 }
 
 /*selects*/
 select {
-	background: #444;
-	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
-	color: #aaa;
+	border: none;
+	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.178));
+}
+select > optgroup{
+	background-color: rgba(255, 255, 255, 0.13);
+	color: #000;
+}
+select > optgroup option{
+	background-color:whitesmoke;
+	color: #838282;
 }
 select > option {
-	background: #444;
+	background: white;
 }
 
 /*buttons*/
@@ -138,7 +145,7 @@ input[type="color"]::-webkit-color-swatch {
 	top: 0;
 	height: 60px;
 	width: 100%;
-	background-color: #1c1a1a;
+	background-color: #dadada;
 
 	border: none;
 	z-index: 999;
@@ -165,13 +172,18 @@ input[type="color"]::-webkit-color-swatch {
 #header h1 strong {
 	font-weight: 500;
 }
+#header :hover{
+	transition: 200ms;
+	background-color: #3a3a3a;
+	color: #fff;
+}
 @media (min-aspect-ratio: 5/4) {
 	#header {
 		background: transparent;
 		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 	}
 	#header h1 {
-		background-color: #1c1a1a;
+		background-color: #dadada;
 		color: #fff;
 	}
 	#header h1 .icon {
@@ -221,11 +233,11 @@ input[type="color"]::-webkit-color-swatch {
 	width: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	background: rgba(0, 0, 0, 0.8);
-	box-shadow: 0 0 1px #aaa;
+	background: white;
+	box-shadow: 0 0 5px #aaa;
 	-webkit-box-shadow: 0 0 1px #aaa;
 	transition: 0.5s;
-	color: #ccc;
+	color: #000;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
@@ -235,8 +247,7 @@ input[type="color"]::-webkit-color-swatch {
 
 #editor .section-header {
 	padding: 15px 20px;
-	background: #1a1a1a;
-	background: rgba(0, 0, 0, 0.6);
+	background: white;
 	text-transform: uppercase;
 	font-size: 0.875em;
 	font-weight: bold;
@@ -244,6 +255,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 #editor .section-header:hover {
 	background: #222;
+	transition: 500ms;
 	color: #fff;
 }
 #editor .section-header .icon {
@@ -259,8 +271,7 @@ input[type="color"]::-webkit-color-swatch {
 #editor .section-content {
 	display: none;
 	padding: 0 20px;
-	background: #2a2a2a;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgb(240, 239, 239);
 	overflow: hidden;
 }
 #editor .section.active .section-content {

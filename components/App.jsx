@@ -59,6 +59,7 @@ export default function App() {
             <Header>
                 {/* <VehicleTitle savedVehicles={savedVehicles} setSavedVehicles={setSavedVehicles} setVehicle={setVehicle} /> */}
             </Header>
+
             <Canvas currentVehicle={currentVehicle} setVehicle={setVehicle} cameraAutoRotate={cameraAutoRotate} />
             <Editor isActive={true} currentVehicle={currentVehicle} setVehicle={setVehicle} cameraAutoRotate={cameraAutoRotate} setCameraAutoRotate={setCameraAutoRotate} />
             <Actions currentVehicle={currentVehicle} savedVehicles={savedVehicles} setSavedVehicles={setSavedVehicles} />
