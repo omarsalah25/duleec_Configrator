@@ -71,8 +71,10 @@ select > optgroup option{
 	background-color:whitesmoke;
 	color: #838282;
 }
-select > option {
-	background: white;
+
+select > option  {
+	color: #000;
+	background-color: white;
 }
 
 /*buttons*/
