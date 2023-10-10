@@ -79,8 +79,10 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
                     .catch((error) => {
                         // Handle error.
                         Swal.fire('Error', 'An error occurred while copying the link to the clipboard.', 'error')
-                        console.log(shareableUrl)
                     })
+                console.log(result)
+                console.log(shareableUrl)
+
             }
         })
     }, [currentVehicle])
