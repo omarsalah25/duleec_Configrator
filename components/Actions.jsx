@@ -63,7 +63,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
         Swal.fire({
             title: 'Share Your Creation',
             text: 'Copy this link to save or share your duleec configuration:',
-            html: `<a href="${shareableUrl}">Shareable link</a>`,
+            html: `<input value="${shareableUrl}"/>`,
             showCancelButton: true,
             confirmButtonText: 'Copy Link',
             cancelButtonText: 'Cancel',
