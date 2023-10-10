@@ -77,13 +77,14 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
                         Swal.fire('Copied!', 'The shareable link has been copied to your clipboard.', 'success')
                     })
                     .catch((error) => {
-                        // Handle error.
-                        Swal.fire('Error', 'An error occurred while copying the link to the clipboard.', 'error')
+                        // Handle error. 
                         console.log(result)
                         console.log(shareableUrl)
+                        Swal.fire('Error', 'An error occurred while copying the link to the clipboard.', 'error')
+
                     })
-                console.log(result)
-                console.log(shareableUrl)
+                // console.log(result)
+                // console.log(shareableUrl)
 
             }
         })
