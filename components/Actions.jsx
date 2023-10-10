@@ -98,6 +98,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
     return (
         <div id='actions'>
+
             {/* <button onClick={saveVehicle}>Save</button> */}
             <button onClick={shareVehicle}>Share</button>
             <button onClick={takeScreenshot}>Screenshot</button>
