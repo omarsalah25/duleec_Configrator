@@ -93,7 +93,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
         if (formValues) {
 
-            await axios.post('https://9f8b-154-185-1-183.ngrok-free.app/api/send/email', {
+            await axios.post('podia.crowddigital.agency/api/send/email', {
                 name: formValues[0],
                 email: formValues[1],
                 phone: formValues[2],
