@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useCallback } from 'react'
 import Swal from 'sweetalert2'
 
@@ -53,42 +54,72 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
     //     })
     // }
 
+
     // Share current config.
-    const shareVehicle = useCallback(() => {
+    const shareVehicle = useCallback(async () => {
+
+
         // Generate shareable URL.
         const jsonString = JSON.stringify(currentVehicle)
         const encodedConfig = encodeURIComponent(jsonString)
         const shareableUrl = `${window.location.origin}?config=${encodedConfig}`
         // Notify user with the link element and copy button.
-        Swal.fire({
-            title: 'Share Your Creation',
-            text: 'Copy this link to save or share your duleec configuration:',
-            html: `<input value="${shareableUrl}"/>`,
-            showCancelButton: true,
-            // confirmButtonText: 'Copy Link',
-            cancelButtonText: 'Cancel',
+        const { value: formValues } = await Swal.fire({
+            title: 'Submit your Creation',
+            html:
+                '<label for="name">Name</label><br>' +
+                '<input id="name"  class="swal2-input"><br>' +
+                '<label for="email">Email</label><br>' +
+
+                '<input id="email"  class="swal2-input"><br>' +
+                '<label for="phone">Phone</label><br>' +
+
+                '<input id="phone"  class="swal2-input"><br>',
+            focusConfirm: false,
+            preConfirm: () => {
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let phone = document.getElementById('phone').value;
+                let url = shareableUrl;
+                return [
+                    name,
+                    email,
+                    phone,
+                    url
+
+                ]
+            }
         })
-        // .then((result) => {
-        //     if (result.isConfirmed) {
-        //         // Copy the shareable URL to the clipboard.
-        //         navigator.clipboard
-        //             .writeText(shareableUrl)
-        //             .then(() => {
-        //                 // Notify the user that the link has been copied.
-        //                 Swal.fire('Copied!', 'The shareable link has been copied to your clipboard.', 'success')
-        //             })
-        //             .catch((error) => {
-        //                 // Handle error. 
-        //                 console.log(result)
-        //                 console.log(shareableUrl)
-        //                 Swal.fire('Error', 'An error occurred while copying the link to the clipboard.', 'error')
 
-        //             })
-        //         // console.log(result)
-        //         // console.log(shareableUrl)
+        if (formValues) {
 
-        //     }
-        // })
+            await axios.post('https://9f8b-154-185-1-183.ngrok-free.app/api/send/email', {
+                name: formValues[0],
+                email: formValues[1],
+                phone: formValues[2],
+                url: formValues[3]
+
+            }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+
+                }
+            })
+
+            await Swal.fire(
+                'Masterpiece Has Been Submitted ! ',
+                '',
+                'success'
+            )
+
+        }
+        else {
+            await Swal.fire(
+                'something went wrong',
+                '',
+                'error')
+        }
     }, [currentVehicle])
 
     // Trigger screenshot.
@@ -104,6 +135,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
             <button onClick={takeScreenshot}>Screenshot</button>
         </div>
     )
+
 }
 
 export default Actions
