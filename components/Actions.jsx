@@ -131,7 +131,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
         <div id='actions'>
 
             {/* <button onClick={saveVehicle}>Save</button> */}
-            <button onClick={shareVehicle}>Share</button>
+            <button onClick={shareVehicle}>Submit</button>
             <button onClick={takeScreenshot}>Screenshot</button>
         </div>
     )
