@@ -116,7 +116,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
         }
         else {
             await Swal.fire(
-                'something went wrong',
+                'something went wrong !',
                 '',
                 'error')
         }
