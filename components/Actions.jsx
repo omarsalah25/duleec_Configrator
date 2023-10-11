@@ -107,7 +107,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
                 }
             })
 
-            await Swal.fire(
+            Swal.fire(
                 'Masterpiece Has Been Submitted ! ',
                 '',
                 'success'
@@ -115,7 +115,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
         }
         else {
-            await Swal.fire(
+            Swal.fire(
                 'something went wrong !',
                 '',
                 'error')
