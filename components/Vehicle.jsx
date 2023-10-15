@@ -5,7 +5,9 @@ import vehicleConfigs from '../vehicleConfigs'
 
 // Model loader.
 const Model = memo(({ path, ...props }) => {
-    const model = useGLTF(path, true)
+
+    const model = useGLTF(path, { draco: true })
+
     return <primitive object={model.scene} {...props} />
 })
 
