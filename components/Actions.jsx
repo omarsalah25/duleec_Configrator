@@ -112,6 +112,11 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
                 '',
                 'success'
             )
+            Swal.fire(
+                'We Will Contact You Soon! ',
+                '',
+                'info'
+            )
 
         }
         else {
