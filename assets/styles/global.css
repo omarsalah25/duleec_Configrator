@@ -324,6 +324,7 @@ input[type="color"]::-webkit-color-swatch {
 
 .homeHref a{
 	text-decoration: none;
+	color: white;
 }
 
 .homeHref a:visited { 
