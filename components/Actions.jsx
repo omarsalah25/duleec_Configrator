@@ -107,12 +107,12 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
                 }
             })
 
-            Swal.fire(
+            await Swal.fire(
                 'Masterpiece Has Been Submitted! ',
                 '',
                 'success'
             )
-            Swal.fire(
+            await Swal.fire(
                 'We Will Contact You Soon! ',
                 '',
                 'info'
@@ -120,8 +120,8 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
         }
         else {
-            Swal.fire(
-                'something went wrong !',
+            await Swal.fire(
+                'Something Went Wrong!',
                 '',
                 'error')
         }
