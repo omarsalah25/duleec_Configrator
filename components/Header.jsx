@@ -4,10 +4,10 @@ function Header({ children }) {
     return (
         <div id='header'>
             <h1 className='homeHref'>
-                <a href='/' >
-                    <img src='../assets/images/icons/duleec-logo.png' className='icon' />
-                    <strong>Configurator</strong>
-                </a>
+                {/* <a href='/' > */}
+                <img src='../assets/images/icons/duleec-logo.png' className='icon' />
+                <strong>Configurator</strong>
+                {/* </a> */}
 
             </h1>
             {/* {children} */}
