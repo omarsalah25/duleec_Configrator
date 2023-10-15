@@ -1,9 +1,9 @@
 {
-    "name": "4x4builder",
+    "name": "duleec-config",
     "version": "2.0.0",
     "private": true,
-    "description": "4x4builder.com",
-    "author": "Shane Vincent",
+    "description": "duleec-config",
+    "author": "Omar Salah",
     "type": "module",
     "scripts": {
         "dev": "vite",
