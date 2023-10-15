@@ -108,7 +108,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
             })
 
             Swal.fire(
-                'Masterpiece Has Been Submitted ! ',
+                'Masterpiece Has Been Submitted! ',
                 '',
                 'success'
             )
