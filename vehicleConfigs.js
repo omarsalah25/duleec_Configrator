@@ -1,158 +1,158 @@
 const vehicleConfigs = {
     defaults: {
-        id: 'chand',
+        id: 'domes',
         addons: {
         },
     },
     vehicles: {
 
-        chand: {
-            make: 'chand',
-            name: 'chand',
-            model: 'assets/models/wheels/rims/body.glb',
+        // chand: {
+        //     make: 'chand',
+        //     name: 'chand',
+        //     model: 'assets/models/wheels/rims/body.glb',
 
-            default_addons: {
-                chains: 'stock',
-                heads: 'stock',
-                lambs: 'stock',
-            },
-            addons: {
-                lambs: {
-                    name: 'lambs',
-                    required: true,
-                    options: {
-                        stock: {
-                            name: 'chand',
-                            model: 'assets/models/wheels/rims/lamb.glb',
-                        },
-                        shrockworks: {
-                            name: 'chand2',
-                            model: 'assets/models/wheels/rims/lamb-1.glb',
-                        },
-                    },
-                },
-                chains: {
-                    name: 'chains',
-                    required: true,
-                    options: {
-                        stock: {
-                            name: 'chain',
-                            model: 'assets/models/wheels/rims/chain.glb',
-                        },
+        //     default_addons: {
+        //         chains: 'stock',
+        //         heads: 'stock',
+        //         lambs: 'stock',
+        //     },
+        //     addons: {
+        //         lambs: {
+        //             name: 'lambs',
+        //             required: true,
+        //             options: {
+        //                 stock: {
+        //                     name: 'chand',
+        //                     model: 'assets/models/wheels/rims/lamb.glb',
+        //                 },
+        //                 shrockworks: {
+        //                     name: 'chand2',
+        //                     model: 'assets/models/wheels/rims/lamb-1.glb',
+        //                 },
+        //             },
+        //         },
+        //         chains: {
+        //             name: 'chains',
+        //             required: true,
+        //             options: {
+        //                 stock: {
+        //                     name: 'chain',
+        //                     model: 'assets/models/wheels/rims/chain.glb',
+        //                 },
 
-                    },
+        //             },
 
-                },
-                heads: {
-                    name: 'heads',
-                    required: false,
-                    options: {
-                        stock: {
-                            name: 'head',
-                            model: 'assets/models/wheels/rims/head.glb',
-                        },
-
-
-                    },
-
-                },
-            },
-        },
-
-        chand2: {
-            make: 'chand',
-            name: 'chand2',
-            model: 'assets/models/wheels/rims/GoldChandelier-base.glb',
-
-            default_addons: {
-                crystals: 'stock',
-                chains: 'stock'
-
-            },
-            addons: {
-                lambs: {
-                    name: 'lambs',
-                    required: true,
-                    options: {
-                        stock: {
-                            name: 'chand',
-                            model: 'assets/models/wheels/rims/GoldChandelier-lambs.glb',
-                        },
-                        shrockworks: {
-                            name: 'chand2',
-                            model: 'assets/models/wheels/rims/lamb-1.glb',
-                        },
-                    },
-                },
-                chains: {
-                    name: 'chains',
-                    required: false,
-                    options: {
-                        stock: {
-                            name: 'chain',
-                            model: 'assets/models/wheels/rims/GoldChandelier-chain.glb',
-                        },
-
-                    },
-
-                },
-
-                crystals: {
-                    name: 'crystals',
-                    required: true,
-                    options: {
-                        stock: {
-                            name: 'head',
-                            model: 'assets/models/wheels/rims/GoldChandelier-crystals.glb',
-                        },
+        //         },
+        //         heads: {
+        //             name: 'heads',
+        //             required: false,
+        //             options: {
+        //                 stock: {
+        //                     name: 'head',
+        //                     model: 'assets/models/wheels/rims/head.glb',
+        //                 },
 
 
-                    },
+        //             },
 
-                },
+        //         },
+        //     },
+        // },
 
-            },
-        },
+        // chand2: {
+        //     make: 'chand',
+        //     name: 'chand2',
+        //     model: 'assets/models/wheels/rims/GoldChandelier-base.glb',
 
-        chand3: {
-            make: 'chand',
-            name: 'chand3',
-            model: 'assets/models/wheels/rims/chand-body.glb',
+        //     default_addons: {
+        //         crystals: 'stock',
+        //         chains: 'stock'
 
-            default_addons: {
+        //     },
+        //     addons: {
+        //         lambs: {
+        //             name: 'lambs',
+        //             required: true,
+        //             options: {
+        //                 stock: {
+        //                     name: 'chand',
+        //                     model: 'assets/models/wheels/rims/GoldChandelier-lambs.glb',
+        //                 },
+        //                 shrockworks: {
+        //                     name: 'chand2',
+        //                     model: 'assets/models/wheels/rims/lamb-1.glb',
+        //                 },
+        //             },
+        //         },
+        //         chains: {
+        //             name: 'chains',
+        //             required: false,
+        //             options: {
+        //                 stock: {
+        //                     name: 'chain',
+        //                     model: 'assets/models/wheels/rims/GoldChandelier-chain.glb',
+        //                 },
+
+        //             },
+
+        //         },
+
+        //         crystals: {
+        //             name: 'crystals',
+        //             required: true,
+        //             options: {
+        //                 stock: {
+        //                     name: 'head',
+        //                     model: 'assets/models/wheels/rims/GoldChandelier-crystals.glb',
+        //                 },
 
 
-            },
-            addons: {
+        //             },
+
+        //         },
+
+        //     },
+        // },
+
+        // chand3: {
+        //     make: 'chand',
+        //     name: 'chand3',
+        //     model: 'assets/models/wheels/rims/chand-body.glb',
+
+        //     default_addons: {
 
 
-            },
-        },
-
-        chand4: {
-            make: 'chand',
-            name: 'chand4',
-            model: 'assets/models/wheels/rims/k-body.glb',
-
-            default_addons: {
+        //     },
+        //     addons: {
 
 
-            },
-            addons: {
+        //     },
+        // },
 
-            },
-        },
+        // chand4: {
+        //     make: 'chand',
+        //     name: 'chand4',
+        //     model: 'assets/models/wheels/rims/k-body.glb',
+
+        //     default_addons: {
+
+
+        //     },
+        //     addons: {
+
+        //     },
+        // },
 
         domes: {
 
             make: 'domes',
             name: 'domes',
-            model: 'assets/models/wheels/rims/DomesFoot.glb',
+            model: 'assets/models/wheels/rims/DomesHead.glb',
 
             default_addons: {
                 Bulb: 'stock',
                 Head: 'stock',
-                Body: 'gold'
+                Body: 'stock'
             },
 
             addons: {
@@ -189,14 +189,33 @@ const vehicleConfigs = {
                     name: 'body',
                     required: true,
                     options: {
+                        // stock: {
+                        //     name: 'white',
+                        //     model: 'assets/models/wheels/rims/DomesFoot.glb',
+                        // },
                         stock: {
-                            name: 'white',
-                            model: 'assets/models/wheels/rims/DomesFoot.glb',
+                            name: 'Brass Brushed',
+                            model: 'assets/models/wheels/rims/DomesFoot_BRASSBRUSHED.glb',
                         },
-                        gold: {
-                            name: 'gold',
-                            model: 'assets/models/wheels/rims/DomesFoot2.glb',
+                        BRONZEBRUSHED: {
+                            name: 'Bronze Brushed',
+                            model: 'assets/models/wheels/rims/DomesFoot_BRONZEBRUSHED.glb',
                         },
+                        BRONZEBRUSHED2: {
+                            name: 'Bronze Brushed 2',
+                            model: 'assets/models/wheels/rims/DomesFoot_BRONZEBRUSHED.glb',
+                        },
+                        SHINYBRASS: {
+                            name: 'Shiny Brass',
+                            model: 'assets/models/wheels/rims/DomesFoot_SHINYBRASS.glb',
+
+                        },
+                        MATTBRASS: {
+                            name: 'Matt Brass',
+                            model: 'assets/models/wheels/rims/DomesFoot_MATTBRASS.glb',
+                        }
+
+
                     },
                 },
             },
