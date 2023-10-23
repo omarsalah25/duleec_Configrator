@@ -56,7 +56,7 @@ function Editor(props) {
             <EditorSection title='lighting' icon={<LightIcon className='icon' />} defaultActive={true}>
                 {/* Vehicle */}
                 <div className='field field-vehicle'>
-                    <label>Model</label>
+                    <label>Product</label>
                     <GroupedSelect value={currentVehicle.id} itemList={vehicleConfigs.vehicles} groupBy={'make'} onChange={(e) => setVehicle({ id: e.target.value })} />
                 </div>
             </EditorSection>
