@@ -55,7 +55,7 @@ export default function App() {
     //         }))
     //     }
     // }, [setVehicle])
-    if (localStorage.getItem("firstTime") == null) {
+    if (localStorage.getItem("welcomeMessage") == null) {
         if (screen.width > 960) {
             Swal.fire({
                 title: 'Welcome To Our Configurator!',
@@ -79,7 +79,7 @@ export default function App() {
 
 
 
-        localStorage.setItem("firstTime", "done");
+        localStorage.setItem("welcomeMessage", "done");
 
 
     }
