@@ -56,15 +56,28 @@ export default function App() {
     //     }
     // }, [setVehicle])
     if (localStorage.getItem("firstTime") == null) {
+        if (screen.width > 960) {
+            Swal.fire({
+                title: 'Welcome To Our Configurator!',
+                html: '<div class="w-100"><p>You Can use:</p> <p><strong>Left click</strong> to move around the product</p> <p><strong>Scroll</strong> to zoom</p> <p> <strong>Right click</strong> to move the camera</p></div>',
+                imageUrl: '../assets/mousePic.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+        }
+        else {
+            Swal.fire({
+                title: 'Welcome  Our Configurator!',
+                html: '<div class="w-100"><p>You Can use:</p> <p><strong>Swipe</strong> to move around the product</p> <p><strong>Pinch</strong> to zoom</p> <p> <strong>Two fingers</strong> to move the camera</p></div>',
+                imageUrl: '../assets/touchPic.jpg',
+                imageWidth: '80%',
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+        }
 
-        Swal.fire({
-            title: 'Welcome To Our Configurator!',
-            html: '<div class="w-100"><p>You Can use:</p> <p><strong>Left click</strong> to move around the product</p> <p><strong>Scroll</strong> to zoom</p> <p> <strong>Right click</strong> to move the camera</p></div>',
-            imageUrl: '../assets/mousePic.jpg',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-        })
+
 
         localStorage.setItem("firstTime", "done");
 
