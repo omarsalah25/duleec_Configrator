@@ -72,7 +72,7 @@ export default function App() {
                 html: '<div class="w-100"><p>You Can use:</p> <p><strong>Swipe</strong> to move around the product</p> <p><strong>Pinch</strong> to zoom</p> <p> <strong>Two fingers</strong> to move the camera</p></div>',
                 imageUrl: '../assets/touchPic.jpg',
                 imageWidth: '80%',
-                imageHeight: 200,
+                imageHeight: 120,
                 imageAlt: 'Custom image',
             })
         }
