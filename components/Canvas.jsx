@@ -37,7 +37,7 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
                     makeDefault
                     target={[0, 0.56, 0]}
                     minDistance={1}
-                    maxDistance={500}
+                    maxDistance={10}
                     maxPolarAngle={Math.PI}
                     autoRotate={cameraAutoRotate}
                     autoRotateSpeed={5}
