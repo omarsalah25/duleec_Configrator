@@ -21,18 +21,15 @@ const vehicleConfigs = {
             addons: {
 
                 Head: {
-                    name: 'head',
+                    name: 'Head',
                     required: true,
 
                     options: {
                         stock: {
-                            name: 'head',
+                            name: 'Glass',
                             model: 'assets/models/Domes/DomesHead.glb',
                         },
-                        stockW: {
-                            name: 'head',
-                            model: 'assets/models/Domes/DomesHead.glb',
-                        },
+
                     },
 
                 },
@@ -41,7 +38,7 @@ const vehicleConfigs = {
                     required: true,
                     options: {
                         stock: {
-                            name: 'chand',
+                            name: 'Bulb',
                             model: 'assets/models/Domes/DomesBulb.glb',
                         },
 
@@ -49,7 +46,7 @@ const vehicleConfigs = {
                 },
 
                 Body: {
-                    name: 'body',
+                    name: 'Body',
                     required: true,
                     options: {
 
