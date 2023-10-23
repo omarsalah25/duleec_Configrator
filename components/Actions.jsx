@@ -66,38 +66,43 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
         // Notify user with the link element and copy button.
         const { value: formValues } = await Swal.fire({
             title: 'Submit your Creation',
+            showCancelButton: 'true',
+            showConfirmButton: true,
+            cancelButtonText: 'Cancel',
             html:
+                '<form mehtod:"post">' +
                 '<label for="name">Name</label><br>' +
-                '<input id="name"  class="swal2-input"><br>' +
+                '<input required id="name"  class="swal2-input"><br>' +
                 '<label for="email">Email</label><br>' +
 
-                '<input id="email"  class="swal2-input"><br>' +
+                '<input required id="email"  class="swal2-input"><br>' +
                 '<label for="phone">Phone</label><br>' +
 
-                '<input id="phone"  class="swal2-input"><br>',
-            focusConfirm: false,
+                '<input required id="phone"  class="swal2-input"><br>' +
+                '</form>',
             preConfirm: () => {
                 let name = document.getElementById('name').value;
                 let email = document.getElementById('email').value;
                 let phone = document.getElementById('phone').value;
-                let url = shareableUrl;
+                let url = shareableUrl
                 return [
                     name,
                     email,
                     phone,
                     url
-
                 ]
             }
         })
 
-        if (formValues) {
 
+        if ((formValues[0] != '') && (formValues[1] != '') && (formValues[2] != '')) {
             await axios.post('https://podia.crowddigital.agency/api/send/email', {
+
                 name: formValues[0],
                 email: formValues[1],
                 phone: formValues[2],
                 url: formValues[3]
+
 
             }, {
                 headers: {
@@ -106,6 +111,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
                 }
             })
+            console.log(formValues);
 
             await Swal.fire(
                 'Masterpiece Has Been Submitted! ',
@@ -117,14 +123,24 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
                 '',
                 'info'
             )
-
         }
         else {
+            console.log(formValues);
+            if (formValues) {
+                await Swal.fire(
+                    'Fill your data!',
+                    '',
+                    'info')
+            }
             await Swal.fire(
-                'Something Went Wrong!',
+                'Someting Went Wrong!',
                 '',
                 'error')
+
+
         }
+
+
     }, [currentVehicle])
 
     // Trigger screenshot.
