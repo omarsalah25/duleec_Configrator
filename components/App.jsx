@@ -5,7 +5,9 @@ import Header from './Header'
 import Editor from './Editor'
 import Canvas from './Canvas'
 import Actions from './Actions'
+// import { logo } from '../assets/mousePic.jpg'
 import VehicleTitle from './VehicleTitle'
+import Swal from 'sweetalert2'
 
 export default function App() {
     // Saved vehicles.
@@ -53,6 +55,19 @@ export default function App() {
     //         }))
     //     }
     // }, [setVehicle])
+    if (localStorage.getItem("firstTime") == null) {
+
+        Swal.fire({
+            title: 'Welcome To Our Configurator!',
+            html: '<div class="w-100"><p>You Can use:</p> <p><strong>Left click</strong> to move around the product</p> <p><strong>Scroll</strong> to zoom</p> <p> <strong>Right click</strong> to move the camera</p></div>',
+            imageUrl: '../assets/mousePic.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+        })
+
+        localStorage.setItem("firstTime", "done");
+    }
 
     return (
         <div className='App'>
