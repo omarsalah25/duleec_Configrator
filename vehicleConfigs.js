@@ -8,8 +8,8 @@ const vehicleConfigs = {
 
         domes: {
 
-            make: 'domes',
-            name: 'domes',
+            make: 'Lampshade',
+            name: 'Domes',
             model: 'assets/models/Domes/DomesHead.glb',
 
             default_addons: {
