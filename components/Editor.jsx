@@ -52,9 +52,7 @@ function Editor(props) {
 
     return (
         <div id='editor' className={isActive ? 'visible' : ''}>
-            {/* Vehicle */}
             <EditorSection title='lighting' icon={<LightIcon className='icon' />} defaultActive={true}>
-                {/* Vehicle */}
                 <div className='field field-vehicle'>
                     <label>Product</label>
                     <GroupedSelect value={currentVehicle.id} itemList={vehicleConfigs.vehicles} groupBy={'make'} onChange={(e) => setVehicle({ id: e.target.value })} />
