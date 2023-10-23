@@ -43,7 +43,7 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
                     autoRotateSpeed={5}
                     dampingFactor={0.025}
                 />
-                <PerspectiveCamera makeDefault fov={25} position={[3, 1.5, 1.5]}>
+                <PerspectiveCamera makeDefault fov={10} position={[3, 1.5, 1.5]}>
                     <directionalLight position={[4, 2.5, 4]} intensity={0.5} />
                     <directionalLight position={[4, 5, 4]} intensity={0.3} />
                     <directionalLight position={[4, -1, 4]} intensity={0.3} />
