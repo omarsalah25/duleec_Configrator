@@ -111,7 +111,6 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
                 }
             })
-            console.log(formValues);
 
             await Swal.fire(
                 'Masterpiece Has Been Submitted! ',
@@ -125,7 +124,6 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
             )
         }
         else {
-            console.log(formValues);
             if (formValues) {
                 await Swal.fire(
                     'Fill your data!',
