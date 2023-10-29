@@ -559,6 +559,9 @@ input[type="color"]::-webkit-color-swatch {
 	transition: all .5s ease;
 }
 	  
+select option{
+	color: #000;
+}
 
 
   
