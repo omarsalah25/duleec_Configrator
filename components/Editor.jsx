@@ -43,6 +43,7 @@ function Editor(props) {
                             <option key={id} value={id}>
                                 {itemList[id].name}
                             </option>
+
                         ))}
                     </optgroup>
                 ))}

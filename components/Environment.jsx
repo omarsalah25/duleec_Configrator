@@ -7,7 +7,7 @@ export default function SceneEnvironment({ performanceDegraded }) {
         <>
             <mesh name='Sky'>
                 <boxGeometry args={[256, 256, 256]} />
-                <meshBasicMaterial color={0xffffff} side={BackSide} toneMapped={false} />
+                <meshBasicMaterial color={0xf5f5f5} side={BackSide} toneMapped={false} />
             </mesh>
 
             <ambientLight intensity={0.1} />

@@ -30,7 +30,9 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
     return (
         <div id='vehicle'>
             {!isLoaded && <Loader />}
-            <Canvas >
+            <Canvas  >
+                {/* <color attach="background" args={[0, 0, 0]} /> */}
+
                 <ambientLight />
                 <PerformanceMonitor onDecline={() => setPerformanceDegraded(true)} />
                 <OrbitControls
@@ -42,6 +44,7 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
                     autoRotate={cameraAutoRotate}
                     autoRotateSpeed={5}
                     dampingFactor={0.025}
+
                 />
                 <PerspectiveCamera makeDefault fov={10} position={[3, 1.5, 1.5]}>
                     <directionalLight position={[4, 2.5, 4]} intensity={0.5} />
@@ -53,7 +56,7 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
 
                 </PerspectiveCamera>
 
-                <Suspense fallback={null}>
+                <Suspense fallback={null} >
                     <Vehicle currentVehicle={currentVehicle} setVehicle={setVehicle} scale={1} />
                 </Suspense>
 
