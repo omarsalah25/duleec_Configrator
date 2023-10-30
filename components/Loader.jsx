@@ -23,7 +23,7 @@ export default function Loader() {
                 <div className="side-right"></div>
                 <div className="side-top"></div>
             </div>
-            <div id='message' className='text'>
+            <div id='message' className='text' style={{ marginTop: "35px" }}>
                 <h6>Loading ....</h6>
             </div>
         </div>

@@ -493,6 +493,12 @@ input[type="color"]::-webkit-color-swatch {
   animation-delay: 3s;
 }
 
+.text {
+	color: rgba(184, 182, 182, 0.432);
+	margin: 14px auto;
+	text-align: center;
+}
+
 @keyframes from-left {
   0% {
     z-index: 20;
