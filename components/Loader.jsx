@@ -2,19 +2,26 @@ import React from 'react'
 
 export default function Loader() {
     return (
-        <div id='loader'>
-            <div className='spinner'>
-                <div className='cube'>
-                    <div className='face front'></div>
-                    <div className='face back'></div>
-                    <div className='face left'></div>
-                    <div className='face right'></div>
-                    <div className='face top'></div>
-                    <div className='face bottom'></div>
-                </div>
-                <div id='message' className='text'>
-                    <h3>Loading</h3>
-                </div>
+        <div class="loader">
+            <div class="box box-1">
+                <div class="side-left"></div>
+                <div class="side-right"></div>
+                <div class="side-top"></div>
+            </div>
+            <div class="box box-2">
+                <div class="side-left"></div>
+                <div class="side-right"></div>
+                <div class="side-top"></div>
+            </div>
+            <div class="box box-3">
+                <div class="side-left"></div>
+                <div class="side-right"></div>
+                <div class="side-top"></div>
+            </div>
+            <div class="box box-4">
+                <div class="side-left"></div>
+                <div class="side-right"></div>
+                <div class="side-top"></div>
             </div>
         </div>
     )

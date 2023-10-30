@@ -30,6 +30,7 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
     return (
         <div id='vehicle'>
             {!isLoaded && <Loader />}
+            {/* <Loader /> */}
             <Canvas  >
                 {/* <color attach="background" args={[0, 0, 0]} /> */}
 

@@ -346,7 +346,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 /*loader*/
-#loader {
+/* #loader {
 	height: 100%;
 	width: 100%;
 	display: table;
@@ -429,7 +429,143 @@ input[type="color"]::-webkit-color-swatch {
 #loader .spinner .text .asset {
 	color: #bbb;
 	font-size: 12px;
+} */
+
+.loader {
+ 
+	scale: 6;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 999999999999999;
 }
+
+.loader .box {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+}
+
+.box .side-left {
+  position: absolute;
+  background-color: #000000;
+  width: 19px;
+  height: 5px;
+  transform: skew(0deg, -25deg);
+  top: 14px;
+  left: 10px;
+}
+
+.box .side-right {
+  position: absolute;
+  background-color: #545454;
+  width: 19px;
+  height: 5px;
+  transform: skew(0deg, 25deg);
+  top: 14px;
+  left: -9px;
+}
+
+.box .side-top {
+  position: absolute;
+  background-color: #dadada;
+  width: 20px;
+  height: 20px;
+  rotate: 45deg;
+  transform: skew(-20deg, -20deg);
+}
+
+.box.box-1 {
+  animation: from-left 4s infinite;
+}
+
+.box.box-2 {
+  animation: from-right 4s infinite;
+  animation-delay: 1s;
+}
+
+.box.box-3 {
+  animation: from-left 4s infinite;
+  animation-delay: 2s;
+}
+
+.box.box-4 {
+  animation: from-right 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes from-left {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: -20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: 20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
 
 .swal-input{
 	width: 90%;
