@@ -436,7 +436,7 @@ input[type="color"]::-webkit-color-swatch {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 999999999999999;
+    z-index: 999;
 }
 
 .loader .box {
