@@ -80,7 +80,7 @@ const vehicleConfigs = {
 
         BREZY: {
             make: 'Table Lamps',
-            name: 'BREZY',
+            name: 'Brezy',
             model: 'assets/models/BREZY/BREZY.glb',
             default_addons: {
 
