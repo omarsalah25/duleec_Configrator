@@ -394,7 +394,33 @@ const vehicleConfigs = {
             },
         },
 
+        Toris: {
+            make: 'Table Lamps',
+            name: 'Toris',
+            model: 'assets/models/Toris/Toris.glb',
+            default_addons: {
 
+                Body: 'stock'
+            },
+            addons: {
+                Body: {
+                    name: 'Base',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass Matt',
+                            model: 'assets/models/Toris/TorisBaseGold.glb',
+                        },
+                        BLACKMATT: {
+                            name: 'Black Matt',
+                            model: 'assets/models/Toris/TorisBaseBlack.glb',
+                        },
+
+                    },
+                },
+            },
+        },
 
 
 
