@@ -46,7 +46,7 @@ const vehicleConfigs = {
                 },
 
                 Body: {
-                    name: 'Body',
+                    name: 'Base',
                     required: true,
                     options: {
 
@@ -88,7 +88,7 @@ const vehicleConfigs = {
             },
             addons: {
                 Body: {
-                    name: 'Body',
+                    name: 'Base',
                     required: true,
                     options: {
 
@@ -127,7 +127,7 @@ const vehicleConfigs = {
                             model: 'assets/models/GOLD-KIRA/GoldKiraHeadBlack.glb',
                         },
                         stock: {
-                            name: 'gold',
+                            name: 'Gold',
                             model: 'assets/models/GOLD-KIRA/GoldKiraHeadGold.glb',
                         },
 
@@ -143,7 +143,7 @@ const vehicleConfigs = {
                             model: 'assets/models/GOLD-KIRA/GoldKiraStandBlack.glb',
                         },
                         stock: {
-                            name: 'gold',
+                            name: 'Gold',
                             model: 'assets/models/GOLD-KIRA/GoldKiraStandGold.glb',
                         },
 
@@ -151,7 +151,7 @@ const vehicleConfigs = {
                 },
 
                 Base: {
-                    name: 'Body',
+                    name: 'Base',
                     required: true,
                     options: {
 
@@ -160,7 +160,7 @@ const vehicleConfigs = {
                             model: 'assets/models/GOLD-KIRA/GoldKiraBaseBlack.glb',
                         },
                         stock: {
-                            name: 'gold',
+                            name: 'Gold',
                             model: 'assets/models/GOLD-KIRA/GoldKiraBaseGold.glb',
                         },
                         // BRONZEBRUSHED: {
@@ -208,7 +208,7 @@ const vehicleConfigs = {
                             model: 'assets/models/Huns/HunsHeadBlack.glb',
                         },
                         stock: {
-                            name: 'gold',
+                            name: 'Gold',
                             model: 'assets/models/Huns/HunsHeadGold.glb',
                         },
 
@@ -224,7 +224,7 @@ const vehicleConfigs = {
                             model: 'assets/models/Huns/HunsStandBlack.glb',
                         },
                         stock: {
-                            name: 'gold',
+                            name: 'Gold',
                             model: 'assets/models/Huns/HunsStandGold.glb',
                         },
 
@@ -232,7 +232,7 @@ const vehicleConfigs = {
                 },
 
                 Base: {
-                    name: 'Body',
+                    name: 'Base',
                     required: true,
                     options: {
 
@@ -241,7 +241,7 @@ const vehicleConfigs = {
                             model: 'assets/models/Huns/HunsBaseBlack.glb',
                         },
                         stock: {
-                            name: 'gold',
+                            name: 'Gold',
                             model: 'assets/models/Huns/HunsBaseGold.glb',
                         },
                         // BRONZEBRUSHED: {
@@ -267,6 +267,134 @@ const vehicleConfigs = {
                 },
             },
         },
+
+        ShadedKira: {
+            make: 'Table Lamps',
+            name: 'Shaded Kira',
+            model: 'assets/models/Shaded-Kira/ShadedKira.glb',
+            default_addons: {
+                Head: 'stock',
+                Base: 'stock',
+                Stand: 'stock'
+            },
+            addons: {
+
+                Head: {
+                    name: 'Head',
+                    required: true,
+
+                    options: {
+                        Black: {
+                            name: 'Black',
+                            model: 'assets/models/Shaded-Kira/ShadedKiraHeadBlack.glb',
+                        },
+                        stock: {
+                            name: 'Gold',
+                            model: 'assets/models/Shaded-Kira/ShadedKiraHeadGold.glb',
+                        },
+
+                    },
+
+                },
+                Stand: {
+                    name: 'Stand',
+                    required: true,
+                    options: {
+                        Black: {
+                            name: 'Black',
+                            model: 'assets/models/Shaded-Kira/ShadedKiraStandBlack.glb',
+                        },
+                        stock: {
+                            name: 'Gold',
+                            model: 'assets/models/Shaded-Kira/ShadedKiraStandGold.glb',
+                        },
+
+                    },
+                },
+
+                Base: {
+                    name: 'Base',
+                    required: true,
+                    options: {
+
+                        Black: {
+                            name: 'Black',
+                            model: 'assets/models/Shaded-Kira/ShadedKiraBaseBlack.glb',
+                        },
+                        stock: {
+                            name: 'Gold',
+                            model: 'assets/models/Shaded-Kira/ShadedKiraBaseGold.glb',
+                        },
+                        // BRONZEBRUSHED: {
+                        //     name: 'Bronze Brushed',
+                        //     model: 'assets/models/Domes/DomesFoot_BRONZEBRUSHED.glb',
+                        // },
+                        // BRONZEBRUSHED2: {
+                        //     name: 'Bronze Brushed 2',
+                        //     model: 'assets/models/Domes/DomesFoot_BRONZEBRUSHED.glb',
+                        // },
+                        // SHINYBRASS: {
+                        //     name: 'Shiny Brass',
+                        //     model: 'assets/models/Domes/DomesFoot_SHINYBRASS.glb',
+
+                        // },
+                        // MATTBRASS: {
+                        //     name: 'Matt Brass',
+                        //     model: 'assets/models/Domes/DomesFoot_MATTBRASS.glb',
+                        // }
+
+
+                    },
+                },
+            },
+        },
+
+        Sheddy: {
+            make: 'Table Lamps',
+            name: 'Sheddy',
+            model: 'assets/models/Sheddy/Sheddy.glb',
+            default_addons: {
+                Head: 'stock',
+                Body: 'stock'
+            },
+            addons: {
+                Body: {
+                    name: 'Base',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Black',
+                            model: 'assets/models/Sheddy/SheddyBaseStock.glb',
+                        },
+                        // BLACKMATT: {
+                        //     name: 'Black Matt',
+                        //     model: 'assets/models/Sheddy/SheddyBodyBlack.glb',
+                        // },
+
+                    },
+                },
+
+                Head: {
+                    name: 'Head',
+                    required: true,
+                    options: {
+
+                        Gold: {
+                            name: 'Brass Brushed',
+                            model: 'assets/models/Sheddy/SheddyHeadGold.glb',
+                        },
+                        stock: {
+                            name: 'Black Matt',
+                            model: 'assets/models/Sheddy/SheddyHeadBlack.glb',
+                        },
+
+                    },
+                },
+            },
+        },
+
+
 
 
 
