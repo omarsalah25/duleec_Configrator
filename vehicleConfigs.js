@@ -122,11 +122,11 @@ const vehicleConfigs = {
                     required: true,
 
                     options: {
-                        stock: {
+                        Black: {
                             name: 'Black',
                             model: 'assets/models/GOLD-KIRA/GoldKiraHeadBlack.glb',
                         },
-                        gold: {
+                        stock: {
                             name: 'gold',
                             model: 'assets/models/GOLD-KIRA/GoldKiraHeadGold.glb',
                         },
@@ -138,11 +138,11 @@ const vehicleConfigs = {
                     name: 'Stand',
                     required: true,
                     options: {
-                        stock: {
+                        Black: {
                             name: 'Black',
                             model: 'assets/models/GOLD-KIRA/GoldKiraStandBlack.glb',
                         },
-                        gold: {
+                        stock: {
                             name: 'gold',
                             model: 'assets/models/GOLD-KIRA/GoldKiraStandGold.glb',
                         },
@@ -155,11 +155,11 @@ const vehicleConfigs = {
                     required: true,
                     options: {
 
-                        stock: {
+                        Black: {
                             name: 'Black',
                             model: 'assets/models/GOLD-KIRA/GoldKiraBaseBlack.glb',
                         },
-                        gold: {
+                        stock: {
                             name: 'gold',
                             model: 'assets/models/GOLD-KIRA/GoldKiraBaseGold.glb',
                         },
@@ -203,11 +203,11 @@ const vehicleConfigs = {
                     required: true,
 
                     options: {
-                        stock: {
+                        Black: {
                             name: 'Black',
                             model: 'assets/models/Huns/HunsHeadBlack.glb',
                         },
-                        gold: {
+                        stock: {
                             name: 'gold',
                             model: 'assets/models/Huns/HunsHeadGold.glb',
                         },
@@ -219,11 +219,11 @@ const vehicleConfigs = {
                     name: 'Stand',
                     required: true,
                     options: {
-                        stock: {
+                        Black: {
                             name: 'Black',
                             model: 'assets/models/Huns/HunsStandBlack.glb',
                         },
-                        gold: {
+                        stock: {
                             name: 'gold',
                             model: 'assets/models/Huns/HunsStandGold.glb',
                         },
@@ -236,11 +236,11 @@ const vehicleConfigs = {
                     required: true,
                     options: {
 
-                        stock: {
+                        Black: {
                             name: 'Black',
                             model: 'assets/models/Huns/HunsBaseBlack.glb',
                         },
-                        gold: {
+                        stock: {
                             name: 'gold',
                             model: 'assets/models/Huns/HunsBaseGold.glb',
                         },
