@@ -709,6 +709,152 @@ const vehicleConfigs = {
             },
         },
 
+        Victory: {
+            make: 'Floor Lamps',
+            name: 'Victory',
+            model: 'assets/models/Floor-Lambs/Victory/Victory.glb',
+            default_addons: {
+
+                Stand: 'stock'
+            },
+            addons: {
+                Stand: {
+                    name: 'Stand',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass',
+                            model: 'assets/models/Floor-Lambs/Victory/VictoryStandGold.glb',
+                        },
+                        Black: {
+                            name: 'Black Matt',
+                            model: 'assets/models/Floor-Lambs/Victory/VictoryStandBlack.glb',
+                        },
+
+                    },
+                },
+            },
+        },
+
+        Inverse: {
+            make: 'Floor Lamps',
+            name: 'Inverse',
+            model: 'assets/models/Floor-Lambs/Inverse/Inverse.glb',
+            default_addons: {
+
+                Stand: 'stock'
+            },
+            addons: {
+                Stand: {
+                    name: 'Stand',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass',
+                            model: 'assets/models/Floor-Lambs/Inverse/InverseStandGold.glb',
+                        },
+                        Black: {
+                            name: 'Black Matt',
+                            model: 'assets/models/Floor-Lambs/Inverse/InverseStandBlack.glb',
+                        },
+
+                    },
+                },
+            },
+        },
+
+        Mount: {
+            make: 'Floor Lamps',
+            name: 'Mount',
+            model: 'assets/models/Floor-Lambs/Mount/Mount.glb',
+            default_addons: {
+                Base: 'stock',
+                Stand: 'stock'
+            },
+            addons: {
+                Stand: {
+                    name: 'Stand',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass',
+                            model: 'assets/models/Floor-Lambs/Mount/MountStandGold.glb',
+                        },
+                        // Black: {
+                        //     name: 'Black Matt',
+                        //     model: 'assets/models/Floor-Lambs/Mount/MountStandBlack.glb',
+                        // },
+
+                    },
+                },
+
+                Base: {
+                    name: 'Base',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass',
+                            model: 'assets/models/Floor-Lambs/Mount/MountBaseGold.glb',
+                        },
+                        // Black: {
+                        //     name: 'Black Matt',
+                        //     model: 'assets/models/Floor-Lambs/Mount/MountStandBlack.glb',
+                        // },
+
+                    },
+                },
+            },
+        },
+
+        Tordu: {
+            make: 'Floor Lamps',
+            name: 'Tordu',
+            model: 'assets/models/Floor-Lambs/Tordu/Tordu.glb',
+            default_addons: {
+                Base: 'stock',
+                Stand: 'stock'
+            },
+            addons: {
+                Stand: {
+                    name: 'Stand',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass',
+                            model: 'assets/models/Floor-Lambs/Tordu/TorduStandGold.glb',
+                        },
+                        Black: {
+                            name: 'Black Matt',
+                            model: 'assets/models/Floor-Lambs/Tordu/TorduStandBlack.glb',
+                        },
+
+                    },
+                },
+
+                Base: {
+                    name: 'Base',
+                    required: true,
+                    options: {
+
+                        stock: {
+                            name: 'Brass',
+                            model: 'assets/models/Floor-Lambs/Tordu/TorduBaseGold.glb',
+                        },
+                        Black: {
+                            name: 'Black Matt',
+                            model: 'assets/models/Floor-Lambs/Tordu/TorduBaseBlack.glb',
+                        },
+
+                    },
+                },
+            },
+        },
+
 
 
     },
