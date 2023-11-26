@@ -393,11 +393,11 @@ const vehicleConfigs = {
                     required: true,
                     options: {
 
-                        Gold: {
+                        stock: {
                             name: 'Brass Brushed',
                             model: 'assets/models/Table-Lambs/Sheddy/SheddyHeadGold.glb',
                         },
-                        stock: {
+                        Black: {
                             name: 'Black Matt',
                             model: 'assets/models/Table-Lambs/Sheddy/SheddyHeadBlack.glb',
                         },
@@ -620,13 +620,14 @@ const vehicleConfigs = {
                     required: true,
 
                     options: {
-                        Black: {
-                            name: 'Black',
-                            model: 'assets/models/Floor-Lambs/Arche/ArcheHeadBlack.glb',
-                        },
-                        stock: {
+                        Gold: {
                             name: 'Gold',
                             model: 'assets/models/Floor-Lambs/Arche/ArcheHeadGold.glb',
+                        },
+                        stock: {
+
+                            name: 'Black',
+                            model: 'assets/models/Floor-Lambs/Arche/ArcheHeadBlack.glb',
                         },
 
                     },

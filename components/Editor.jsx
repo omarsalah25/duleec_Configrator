@@ -66,8 +66,8 @@ function Editor(props) {
                                             handleCheckboxChange(updatedValue);
                                         }}
                                     />
-                                    <span class="checkbox-tile" style={{ backgroundImage: `url(${itemList[item].imageUrl})` }}>
-                                        <span class="checkbox-label">{itemList[item].name}
+                                    <span className="checkbox-tile" style={{ backgroundImage: `url(${itemList[item].imageUrl})` }}>
+                                        <span className="checkbox-label">{itemList[item].name}
                                         </span>
                                     </span>
                                 </label>
@@ -86,7 +86,7 @@ function Editor(props) {
                 <div className='field field-vehicle'>
                     <GroupedCheckbox value={currentVehicle.id} itemList={vehicleConfigs.vehicles} groupBy={'make'} onChange={(e) => {
                         setVehicle({ id: e[0] })
-                        console.log(e[0])
+                        // console.log(e[0])
                     }} />
                 </div>
             </EditorSection>
