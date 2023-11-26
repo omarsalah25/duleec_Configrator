@@ -198,6 +198,10 @@ input[type="color"]::-webkit-color-swatch {
 	}
 }
 @media (max-aspect-ratio: 5/4) {
+	#header{
+		background-color: #000000c5;
+
+	}
 	#header p {
 		margin: 0 20px 0 0;
 		color: #fff;
