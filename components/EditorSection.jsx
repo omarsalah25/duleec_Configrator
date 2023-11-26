@@ -12,7 +12,7 @@ const EditorSection = (props) => {
       <div className="section-header" onClick={toggleActive} >
         {props.icon}
         {props.title}
-        <svg aria-hidden="true" className="arrow" viewBox="0 0 24 24" style={{ transform: isActive ? 'rotate(180deg)' : 'none', transition: '500ms' }}>
+        <svg aria-hidden="true" className="arrow" viewBox="0 0 24 24" style={{ transform: isActive ? 'rotate(180deg)' : 'none', transition: '1s' }}>
           <path d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z" />
         </svg>
       </div>

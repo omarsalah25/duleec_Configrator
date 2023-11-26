@@ -199,6 +199,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 @media (max-aspect-ratio: 5/4) {
 	#header p {
+		margin: 0 20px 0 0;
 		color: #fff;
 		font-size: smaller;
 		transition: 0.5s;
