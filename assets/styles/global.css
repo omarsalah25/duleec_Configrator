@@ -190,6 +190,7 @@ input[type="color"]::-webkit-color-swatch {
 		transition: 0.5s;
 
 	}
+
 	#header h1 .icon {
 		fill: #000;
 		transition: 0.5s;
@@ -203,6 +204,9 @@ input[type="color"]::-webkit-color-swatch {
 		transition: 0.5s;
 
 	}
+	#header strong{
+		display: none;
+			}
 	#header h1 {
 		font-size: larger;
 		transition: 0.5s;
