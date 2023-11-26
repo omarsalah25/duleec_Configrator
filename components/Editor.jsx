@@ -45,7 +45,7 @@ function Editor(props) {
         return (
             <div className="grouped-checkboxes">
                 {Object.keys(groupedList).map((type) => (
-                    <div key={type} className="group" style={{ textAlign: 'center' }}>
+                    <div key={type} className="group" style={{ textAlign: 'center', padding: '0 10%' }}>
                         <h2 className='group-label'>{type}</h2>
                         <hr></hr>
                         <div className='checkbox-wrapper-16'>
