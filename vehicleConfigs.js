@@ -1,6 +1,6 @@
 const vehicleConfigs = {
     defaults: {
-        id: 'domes',
+        id: 'Domes',
         addons: {
         },
     },
@@ -8,11 +8,12 @@ const vehicleConfigs = {
         //Table Lamps
 
 
-        domes: {
+        Domes: {
 
             make: 'Table Lamps',
             name: 'Domes',
             model: 'assets/models/Table-Lambs/Domes/DomesHead.glb',
+            imageUrl: 'assets/images/products/domes.png',
 
             default_addons: {
                 Bulb: 'stock',
@@ -80,10 +81,12 @@ const vehicleConfigs = {
             },
         },
 
-        BREZY: {
+        Brezy: {
             make: 'Table Lamps',
             name: 'Brezy',
             model: 'assets/models/Table-Lambs/BREZY/BREZY.glb',
+            imageUrl: 'assets/images/products/brezy.png',
+
             default_addons: {
 
                 Body: 'stock'
@@ -112,6 +115,8 @@ const vehicleConfigs = {
             make: 'Table Lamps',
             name: 'Kira',
             model: 'assets/models/Table-Lambs/GOLD-KIRA/GoldKira.glb',
+            imageUrl: 'assets/images/products/kira.png',
+
             default_addons: {
                 Head: 'stock',
                 Base: 'stock',
@@ -193,6 +198,8 @@ const vehicleConfigs = {
             make: 'Table Lamps',
             name: 'Huns',
             model: 'assets/models/Table-Lambs/Huns/Huns.glb',
+            imageUrl: 'assets/images/products/huns.png',
+
             default_addons: {
                 Head: 'stock',
                 Base: 'stock',
@@ -270,10 +277,12 @@ const vehicleConfigs = {
             },
         },
 
-        ShadedKira: {
+        Shadedkira: {
             make: 'Table Lamps',
-            name: 'Shaded Kira',
+            name: 'Shadedkira',
             model: 'assets/models/Table-Lambs/Shaded-Kira/ShadedKira.glb',
+            imageUrl: 'assets/images/products/shadedKira.png',
+
             default_addons: {
                 Head: 'stock',
                 Base: 'stock',
@@ -355,6 +364,8 @@ const vehicleConfigs = {
             make: 'Table Lamps',
             name: 'Sheddy',
             model: 'assets/models/Table-Lambs/Sheddy/Sheddy.glb',
+            imageUrl: 'assets/images/products/sheddy.png',
+
             default_addons: {
                 Head: 'stock',
                 Body: 'stock'
@@ -400,6 +411,8 @@ const vehicleConfigs = {
             make: 'Table Lamps',
             name: 'Toris',
             model: 'assets/models/Table-Lambs/Toris/Toris.glb',
+            imageUrl: 'assets/images/products/toris.png',
+
             default_addons: {
 
                 Body: 'stock'
@@ -428,6 +441,8 @@ const vehicleConfigs = {
             make: 'Table Lamps',
             name: 'Vector',
             model: 'assets/models/Table-Lambs/Vector/Vector.glb',
+            imageUrl: 'assets/images/products/vector.png',
+
             default_addons: {
                 Head: 'stock',
                 // Base: 'stock',
@@ -506,6 +521,8 @@ const vehicleConfigs = {
             make: 'Table Lamps',
             name: 'Wing',
             model: 'assets/models/Table-Lambs/Wing/Wing.glb',
+            imageUrl: 'assets/images/products/wing.png',
+
             default_addons: {
                 Head: 'stock',
                 Base: 'stock',
@@ -589,6 +606,8 @@ const vehicleConfigs = {
             make: 'Floor Lamps',
             name: 'Arche',
             model: 'assets/models/Floor-Lambs/Arche/Arche.glb',
+            imageUrl: 'assets/images/products/arche.png',
+
             default_addons: {
                 Head: 'stock',
                 Base: 'stock',
@@ -671,6 +690,8 @@ const vehicleConfigs = {
             make: 'Floor Lamps',
             name: 'Curvy',
             model: 'assets/models/Floor-Lambs/Curvy/Curvy.glb',
+            imageUrl: 'assets/images/products/curvy.png',
+
             default_addons: {
                 Stand: 'stock',
                 Base: 'stock'
@@ -713,6 +734,8 @@ const vehicleConfigs = {
             make: 'Floor Lamps',
             name: 'Victory',
             model: 'assets/models/Floor-Lambs/Victory/Victory.glb',
+            imageUrl: 'assets/images/products/victory.png',
+
             default_addons: {
 
                 Stand: 'stock'
@@ -741,6 +764,8 @@ const vehicleConfigs = {
             make: 'Floor Lamps',
             name: 'Inverse',
             model: 'assets/models/Floor-Lambs/Inverse/Inverse.glb',
+            imageUrl: 'assets/images/products/inverse.png',
+
             default_addons: {
 
                 Stand: 'stock'
@@ -769,6 +794,8 @@ const vehicleConfigs = {
             make: 'Floor Lamps',
             name: 'Mount',
             model: 'assets/models/Floor-Lambs/Mount/Mount.glb',
+            imageUrl: 'assets/images/products/mount.png',
+
             default_addons: {
                 Base: 'stock',
                 Stand: 'stock'
@@ -814,6 +841,8 @@ const vehicleConfigs = {
             make: 'Floor Lamps',
             name: 'Tordu',
             model: 'assets/models/Floor-Lambs/Tordu/Tordu.glb',
+            imageUrl: 'assets/images/products/tordu.png',
+
             default_addons: {
                 Base: 'stock',
                 Stand: 'stock'

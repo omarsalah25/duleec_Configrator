@@ -31,32 +31,63 @@ function Editor(props) {
     }
 
     // Select list grouped by provided type.
-    const GroupedSelect = ({ value, itemList, groupBy, ...restProps }) => {
-        // Get list sorted by type.
-        const groupedList = groupObjectByKey(itemList, groupBy)
+    const GroupedCheckbox = ({ value, itemList, groupBy, onChange }) => {
+
+
+        const handleCheckboxChange = (selectedValue) => {
+            // Implement your logic to handle checkbox changes here
+            // For instance, updating the selected values
+            onChange(selectedValue);
+        };
+
+        const groupedList = groupObjectByKey(itemList, groupBy);
 
         return (
-            <select value={value || ''} {...restProps}>
+            <div className="grouped-checkboxes">
                 {Object.keys(groupedList).map((type) => (
-                    <optgroup key={type} label={type}>
-                        {groupedList[type].map((id) => (
-                            <option key={id} value={id}>
-                                {itemList[id].name}
-                            </option>
+                    <div key={type} className="group" style={{ textAlign: 'center' }}>
+                        <h2 className='group-label'>{type}</h2>
+                        <hr></hr>
+                        <div className='checkbox-wrapper-16'>
 
-                        ))}
-                    </optgroup>
+                            {groupedList[type].map((item) => (
+                                <label key={itemList[item].name} className="checkbox-wrapper">
+                                    <input
+                                        type="checkbox"
+                                        className="checkbox-input"
+                                        value={itemList[item].name}
+                                        checked={value.includes(itemList[item].name)}
+                                        onChange={(e) => {
+                                            const isChecked = e.target.checked;
+                                            const selectedId = itemList[item].name;
+                                            const updatedValue = isChecked
+                                                ? [selectedId]
+                                                : value.filter((id) => id !== selectedId);
+                                            handleCheckboxChange(updatedValue);
+                                        }}
+                                    />
+                                    <span class="checkbox-tile" style={{ backgroundImage: `url(${itemList[item].imageUrl})` }}>
+                                        <span class="checkbox-label">{itemList[item].name}
+                                        </span>
+                                    </span>
+                                </label>
+                            ))}
+                        </div>
+
+                    </div>
                 ))}
-            </select>
-        )
-    }
+            </div>
+        );
+    };
 
     return (
         <div id='editor' className={isActive ? 'visible' : ''}>
             <EditorSection title='lighting' icon={<LightIcon className='icon' />} defaultActive={true}>
                 <div className='field field-vehicle'>
-                    <label>Product</label>
-                    <GroupedSelect value={currentVehicle.id} itemList={vehicleConfigs.vehicles} groupBy={'make'} onChange={(e) => setVehicle({ id: e.target.value })} />
+                    <GroupedCheckbox value={currentVehicle.id} itemList={vehicleConfigs.vehicles} groupBy={'make'} onChange={(e) => {
+                        setVehicle({ id: e[0] })
+                        console.log(e[0])
+                    }} />
                 </div>
             </EditorSection>
 
