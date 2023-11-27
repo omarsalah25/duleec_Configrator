@@ -62,7 +62,7 @@ function Editor(props) {
                                             const selectedId = itemList[item].name;
                                             const updatedValue = isChecked
                                                 ? [selectedId]
-                                                : value.filter((id) => id !== selectedId);
+                                                : value.filter((name) => name === selectedId);
                                             handleCheckboxChange(updatedValue);
                                         }}
                                     />
@@ -73,7 +73,6 @@ function Editor(props) {
                                 </label>
                             ))}
                         </div>
-
                     </div>
                 ))}
             </div>
