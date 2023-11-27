@@ -6,10 +6,7 @@ const vehicleConfigs = {
     },
     vehicles: {
         //Table Lamps
-
-
         Domes: {
-
             make: 'Table Lamps',
             name: 'Domes',
             model: 'assets/models/Table-Lambs/Domes/DomesHead.glb',
@@ -22,19 +19,15 @@ const vehicleConfigs = {
             },
 
             addons: {
-
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         stock: {
                             name: 'Glass',
                             model: 'assets/models/Table-Lambs/Domes/DomesHead.glb',
                         },
-
                     },
-
                 },
                 Bulb: {
                     name: 'Bulb',
@@ -44,15 +37,12 @@ const vehicleConfigs = {
                             name: 'Bulb',
                             model: 'assets/models/Table-Lambs/Domes/DomesBulb.glb',
                         },
-
                     },
                 },
-
                 Body: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass Brushed',
                             model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRASSBRUSHED.glb',
@@ -74,8 +64,6 @@ const vehicleConfigs = {
                             name: 'Matt Brass',
                             model: 'assets/models/Table-Lambs/Domes/DomesFoot_MATTBRASS.glb',
                         }
-
-
                     },
                 },
             },
@@ -91,12 +79,12 @@ const vehicleConfigs = {
 
                 Body: 'stock'
             },
+
             addons: {
                 Body: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass Brushed',
                             model: 'assets/models/Table-Lambs/BREZY/BrezyBodyGold.glb',
@@ -105,7 +93,6 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Table-Lambs/BREZY/BrezyBodyBlack.glb',
                         },
-
                     },
                 },
             },
@@ -122,12 +109,11 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
-            addons: {
 
+            addons: {
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         Black: {
                             name: 'Black',
@@ -137,9 +123,7 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/GOLD-KIRA/GoldKiraHeadGold.glb',
                         },
-
                     },
-
                 },
                 Stand: {
                     name: 'Stand',
@@ -153,7 +137,6 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/GOLD-KIRA/GoldKiraStandGold.glb',
                         },
-
                     },
                 },
 
@@ -205,12 +188,11 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
-            addons: {
 
+            addons: {
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         Black: {
                             name: 'Black',
@@ -220,9 +202,7 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Huns/HunsHeadGold.glb',
                         },
-
                     },
-
                 },
                 Stand: {
                     name: 'Stand',
@@ -236,15 +216,12 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Huns/HunsStandGold.glb',
                         },
-
                     },
                 },
-
                 Base: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         Black: {
                             name: 'Black',
                             model: 'assets/models/Table-Lambs/Huns/HunsBaseBlack.glb',
@@ -253,25 +230,6 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Huns/HunsBaseGold.glb',
                         },
-                        // BRONZEBRUSHED: {
-                        //     name: 'Bronze Brushed',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // BRONZEBRUSHED2: {
-                        //     name: 'Bronze Brushed 2',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // SHINYBRASS: {
-                        //     name: 'Shiny Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_SHINYBRASS.glb',
-
-                        // },
-                        // MATTBRASS: {
-                        //     name: 'Matt Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_MATTBRASS.glb',
-                        // }
-
-
                     },
                 },
             },
@@ -288,12 +246,11 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
-            addons: {
 
+            addons: {
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         Black: {
                             name: 'Black',
@@ -303,9 +260,7 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Shaded-Kira/ShadedKiraHeadGold.glb',
                         },
-
                     },
-
                 },
                 Stand: {
                     name: 'Stand',
@@ -319,15 +274,12 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Shaded-Kira/ShadedKiraStandGold.glb',
                         },
-
                     },
                 },
-
                 Base: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         Black: {
                             name: 'Black',
                             model: 'assets/models/Table-Lambs/Shaded-Kira/ShadedKiraBaseBlack.glb',
@@ -336,25 +288,6 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Shaded-Kira/ShadedKiraBaseGold.glb',
                         },
-                        // BRONZEBRUSHED: {
-                        //     name: 'Bronze Brushed',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // BRONZEBRUSHED2: {
-                        //     name: 'Bronze Brushed 2',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // SHINYBRASS: {
-                        //     name: 'Shiny Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_SHINYBRASS.glb',
-
-                        // },
-                        // MATTBRASS: {
-                        //     name: 'Matt Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_MATTBRASS.glb',
-                        // }
-
-
                     },
                 },
             },
@@ -370,24 +303,18 @@ const vehicleConfigs = {
                 Head: 'stock',
                 Body: 'stock'
             },
+
             addons: {
                 Body: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Black',
                             model: 'assets/models/Table-Lambs/Sheddy/SheddyBaseStock.glb',
                         },
-                        // BLACKMATT: {
-                        //     name: 'Black Matt',
-                        //     model: 'assets/models/Table-Lambs/Sheddy/SheddyBodyBlack.glb',
-                        // },
-
                     },
                 },
-
                 Head: {
                     name: 'Head',
                     required: true,
@@ -401,7 +328,6 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Table-Lambs/Sheddy/SheddyHeadBlack.glb',
                         },
-
                     },
                 },
             },
@@ -417,12 +343,12 @@ const vehicleConfigs = {
 
                 Body: 'stock'
             },
+
             addons: {
                 Body: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass Matt',
                             model: 'assets/models/Table-Lambs/Toris/TorisBaseGold.glb',
@@ -431,7 +357,6 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Table-Lambs/Toris/TorisBaseBlack.glb',
                         },
-
                     },
                 },
             },
@@ -448,12 +373,11 @@ const vehicleConfigs = {
                 // Base: 'stock',
                 Stand: 'stock'
             },
-            addons: {
 
+            addons: {
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         Black: {
                             name: 'Black',
@@ -463,9 +387,7 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Vector/VectorHeadGold.glb',
                         },
-
                     },
-
                 },
                 Stand: {
                     name: 'Stand',
@@ -479,41 +401,8 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Vector/VectorStandGold.glb',
                         },
-
                     },
                 },
-
-                // Base: {
-                //     name: 'Base',
-                //     required: true,
-                //     options: {
-
-
-                //         stock: {
-                //             name: 'Gold',
-                //             model: 'assets/models/Table-Lambs/Vector/VectorBaseStock.glb',
-                //         },
-                //         // BRONZEBRUSHED: {
-                //         //     name: 'Bronze Brushed',
-                //         //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                //         // },
-                //         // BRONZEBRUSHED2: {
-                //         //     name: 'Bronze Brushed 2',
-                //         //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                //         // },
-                //         // SHINYBRASS: {
-                //         //     name: 'Shiny Brass',
-                //         //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_SHINYBRASS.glb',
-
-                //         // },
-                //         // MATTBRASS: {
-                //         //     name: 'Matt Brass',
-                //         //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_MATTBRASS.glb',
-                //         // }
-
-
-                //     },
-                // },
             },
         },
 
@@ -528,12 +417,11 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
-            addons: {
 
+            addons: {
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         Black: {
                             name: 'Black',
@@ -543,9 +431,7 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Wing/WingHeadGold.glb',
                         },
-
                     },
-
                 },
                 Stand: {
                     name: 'Stand',
@@ -559,15 +445,12 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Wing/WingStandGold.glb',
                         },
-
                     },
                 },
-
                 Base: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         Black: {
                             name: 'Black',
                             model: 'assets/models/Table-Lambs/Wing/WingBaseBlack.glb',
@@ -576,32 +459,12 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Table-Lambs/Wing/WingBaseGold.glb',
                         },
-                        // BRONZEBRUSHED: {
-                        //     name: 'Bronze Brushed',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // BRONZEBRUSHED2: {
-                        //     name: 'Bronze Brushed 2',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // SHINYBRASS: {
-                        //     name: 'Shiny Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_SHINYBRASS.glb',
-
-                        // },
-                        // MATTBRASS: {
-                        //     name: 'Matt Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_MATTBRASS.glb',
-                        // }
-
-
                     },
                 },
             },
         },
 
         //Floor Lamps
-
         Arche: {
             make: 'Floor Lamps',
             name: 'Arche',
@@ -613,12 +476,11 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
-            addons: {
 
+            addons: {
                 Head: {
                     name: 'Head',
                     required: true,
-
                     options: {
                         Gold: {
                             name: 'Gold',
@@ -629,9 +491,7 @@ const vehicleConfigs = {
                             name: 'Black',
                             model: 'assets/models/Floor-Lambs/Arche/ArcheHeadBlack.glb',
                         },
-
                     },
-
                 },
                 Stand: {
                     name: 'Stand',
@@ -645,15 +505,12 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Floor-Lambs/Arche/ArcheStandGold.glb',
                         },
-
                     },
                 },
-
                 Base: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         Black: {
                             name: 'Black',
                             model: 'assets/models/Floor-Lambs/Arche/ArcheBaseBlack.glb',
@@ -662,30 +519,10 @@ const vehicleConfigs = {
                             name: 'Gold',
                             model: 'assets/models/Floor-Lambs/Arche/ArcheBaseGold.glb',
                         },
-                        // BRONZEBRUSHED: {
-                        //     name: 'Bronze Brushed',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // BRONZEBRUSHED2: {
-                        //     name: 'Bronze Brushed 2',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_BRONZEBRUSHED.glb',
-                        // },
-                        // SHINYBRASS: {
-                        //     name: 'Shiny Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_SHINYBRASS.glb',
-
-                        // },
-                        // MATTBRASS: {
-                        //     name: 'Matt Brass',
-                        //     model: 'assets/models/Table-Lambs/Domes/DomesFoot_MATTBRASS.glb',
-                        // }
-
-
                     },
                 },
             },
         },
-
 
         Curvy: {
             make: 'Floor Lamps',
@@ -697,26 +534,22 @@ const vehicleConfigs = {
                 Stand: 'stock',
                 Base: 'stock'
             },
+
             addons: {
                 Base: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Black Matt',
                             model: 'assets/models/Floor-Lambs/Curvy/CurvyBaseBlack.glb',
                         },
-
-
                     },
                 },
-
                 Stand: {
                     name: 'Stand',
                     required: true,
                     options: {
-
                         Gold: {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Curvy/CurvyStandGold.glb',
@@ -725,7 +558,6 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Floor-Lambs/Curvy/CurvyStandBlack.glb',
                         },
-
                     },
                 },
             },
@@ -738,15 +570,14 @@ const vehicleConfigs = {
             imageUrl: 'assets/images/products/victory.png',
 
             default_addons: {
-
                 Stand: 'stock'
             },
+
             addons: {
                 Stand: {
                     name: 'Stand',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Victory/VictoryStandGold.glb',
@@ -755,7 +586,6 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Floor-Lambs/Victory/VictoryStandBlack.glb',
                         },
-
                     },
                 },
             },
@@ -768,7 +598,6 @@ const vehicleConfigs = {
             imageUrl: 'assets/images/products/inverse.png',
 
             default_addons: {
-
                 Stand: 'stock'
             },
             addons: {
@@ -776,7 +605,6 @@ const vehicleConfigs = {
                     name: 'Stand',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Inverse/InverseStandGold.glb',
@@ -785,7 +613,6 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Floor-Lambs/Inverse/InverseStandBlack.glb',
                         },
-
                     },
                 },
             },
@@ -801,24 +628,18 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
+
             addons: {
                 Stand: {
                     name: 'Stand',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Mount/MountStandGold.glb',
                         },
-                        // Black: {
-                        //     name: 'Black Matt',
-                        //     model: 'assets/models/Floor-Lambs/Mount/MountStandBlack.glb',
-                        // },
-
                     },
                 },
-
                 Base: {
                     name: 'Base',
                     required: true,
@@ -828,11 +649,6 @@ const vehicleConfigs = {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Mount/MountBaseGold.glb',
                         },
-                        // Black: {
-                        //     name: 'Black Matt',
-                        //     model: 'assets/models/Floor-Lambs/Mount/MountStandBlack.glb',
-                        // },
-
                     },
                 },
             },
@@ -848,12 +664,12 @@ const vehicleConfigs = {
                 Base: 'stock',
                 Stand: 'stock'
             },
+
             addons: {
                 Stand: {
                     name: 'Stand',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Tordu/TorduStandGold.glb',
@@ -862,15 +678,12 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Floor-Lambs/Tordu/TorduStandBlack.glb',
                         },
-
                     },
                 },
-
                 Base: {
                     name: 'Base',
                     required: true,
                     options: {
-
                         stock: {
                             name: 'Brass',
                             model: 'assets/models/Floor-Lambs/Tordu/TorduBaseGold.glb',
@@ -879,14 +692,10 @@ const vehicleConfigs = {
                             name: 'Black Matt',
                             model: 'assets/models/Floor-Lambs/Tordu/TorduBaseBlack.glb',
                         },
-
                     },
                 },
             },
         },
-
-
-
     },
 }
 
