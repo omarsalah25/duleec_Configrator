@@ -54,7 +54,6 @@ const ThreeCanvas = ({ currentVehicle, setVehicle, cameraAutoRotate }) => {
                     <directionalLight position={[4, 2.5, 4]} intensity={0.5} />
                     <directionalLight position={[0, -1, 15]} intensity={0.05} />
                     <directionalLight position={[0, 2.5, 0]} intensity={0.4} />
-
                 </PerspectiveCamera>
 
                 <Suspense fallback={null} >
