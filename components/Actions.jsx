@@ -96,7 +96,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
 
         if ((formValues[0] != '') && (formValues[1] != '') && (formValues[2] != '')) {
-            await axios.post('http://192.168.8.178:8000/api/send/email', {
+            await axios.post('/send/email', {
 
                 name: formValues[0],
                 email: formValues[1],
