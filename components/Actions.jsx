@@ -96,7 +96,7 @@ const Actions = ({ currentVehicle, savedVehicles, setSavedVehicles }) => {
 
 
         if ((formValues[0] != '') && (formValues[1] != '') && (formValues[2] != '')) {
-            await axios.post('/send/email', {
+            await axios.post('https://1c73-41-68-120-230.ngrok-free.app/send/email', {
 
                 name: formValues[0],
                 email: formValues[1],
